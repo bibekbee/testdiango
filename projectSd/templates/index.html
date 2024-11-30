@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+  <link rel="stylesheet" crossorigin href="/static/assets/index-naSArQ4u.css">
+</head>
+<body>
+    <header>
+        <div class="container mx-auto py-2">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center" >
+                    <img class="w-[50px] h-[50px]" src="/static/assets/seed-VbYmyroD.png" alt="logo"/>
+                    <h3 class="text-lg">Project Seed</h3>
+                </div>
+                <div class="flex inter-fonter justify-between gap-2">
+                    <input class="hidden inpt lg:block" type="email" placeholder="Email" name="email" required/>
+                    <input class="hidden inpt lg:block" type="text" placeholder="Password" name="password" required/>
+                    <input class="m-2 rounded-md bg-blue-600 text-white px-4" type="submit" value="Log In" />
+                    <input class="m-2 rounded-md bg-blue-600 text-white px-4" type="submit" value="Sign Up" />
+                </div>
+            </div>
+         </div>
+    </header>
+    <main>
+
+        <div class="lg:grid lg:grid-cols-5">
+            <!-- About Section -->
+            <section class="lg:col-span-4">
+                <div class="bg-[#020125] p-20 lg:p-28 text-white h-[calc(100vh/2)+200px] flex">
+                    <div class="space-y-4">
+                        <h1 class="text-3xl">About<br>{{prjseed}}</h1>
+                        <p class="lg:w-96">
+                            This is the platform were you can create an 
+                            account to connect with your friends and give 
+                            them a rise.
+                        </p>
+                        <button class="bg-[#F48120] p-3 rounded-lg">Read more</button>
+                    </div>
+                    <div class="m-auto">
+                        <img class="hidden lg:block w-56 h-56 rounded-[150px]" src="/static/assets/imgirl1-BafBge_H.png" alt="side-image"/>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="mt-[4px] flex flex-col lg:flex-row space-around h-auto lg:py-10 ">
+                            <div class="text-white lg:ml-28 space-y-4 bg-gray-900 lg:rounded-xl p-20">
+                                <div class="flex">
+                                    <h1 class="text-3xl">Collect Rise</h1>
+                                    <img class="w-10 h-10 ml-4" src="/static/assets/seed-VbYmyroD.png" alt="Rise"/>
+                                </div>
+                                <div>
+                                    <p class="w-72">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+                                    magnam, 
+                                    </p>
+                                </div>
+                            </div>    
+
+                            <div class="mx-auto bg-gray-900 lg:rounded-xl p-20">
+                                <div class="space-y-4">
+                                    <h1 class="text-3xl text-white">Our Interface</h1>
+                                    <div class="grid grid-cols-4 gap-10 lg:w-96 items-center">
+                                        <p class="col-span-2 text-white">
+                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                                           id quaerat sit 
+                                        </p>
+                                        <img class="hidden lg:block col-span-2 h-auto w-auto rounded-lg" src="/static/assets/screen1-DCGEinl9.png" alt="img-screen"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SideBar -->
+            <section class="hidden lg:block col-span-1 bg-[#B35506] text-white">
+                <div>
+                    <div class="ml-4 mt-4">
+                        <h3 class="text-2xl text-gray-50 font-bold">Top Students</h3>
+                        <hr class="mr-10 mt-2 border-t-4">
+                    </div>
+                    <div class="mt-14">
+                        <div class="bg-[rgba(2,1,37,0.9)] rounded-2xl m-8 py-4">
+                            <div class="flex flex-col items-center">
+                                <img class="w-16 h-16 rounded-[100px] -mt-11" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4gKgSUNDX1BST0ZJTEUAAQEAAAKQbGNtcwQwAABtbnRyUkdCIFhZWiAH3wADAAgACAArADphY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAADhjcHJ0AAABQAAAAE53dHB0AAABkAAAABRjaGFkAAABpAAAACxyWFlaAAAB0AAAABRiWFlaAAAB5AAAABRnWFlaAAAB+AAAABRyVFJDAAACDAAAACBnVFJDAAACLAAAACBiVFJDAAACTAAAACBjaHJtAAACbAAAACRtbHVjAAAAAAAAAAEAAAAMZW5VUwAAABwAAAAcAHMAUgBHAEIAIABiAHUAaQBsAHQALQBpAG4AAG1sdWMAAAAAAAAAAQAAAAxlblVTAAAAMgAAABwATgBvACAAYwBvAHAAeQByAGkAZwBoAHQALAAgAHUAcwBlACAAZgByAGUAZQBsAHkAAAAAWFlaIAAAAAAAAPbWAAEAAAAA0y1zZjMyAAAAAAABDEoAAAXj///zKgAAB5sAAP2H///7ov///aMAAAPYAADAlFhZWiAAAAAAAABvlAAAOO4AAAOQWFlaIAAAAAAAACSdAAAPgwAAtr5YWVogAAAAAAAAYqUAALeQAAAY3nBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbcGFyYQAAAAAAAwAAAAJmZgAA8qcAAA1ZAAAT0AAACltwYXJhAAAAAAADAAAAAmZmAADypwAADVkAABPQAAAKW2Nocm0AAAAAAAMAAAAAo9cAAFR7AABMzQAAmZoAACZmAAAPXP/bAEMACAYGBwYFCAcHBwkJCAoMFA0MCwsMGRITDxQdGh8eHRocHCAkLicgIiwjHBwoNyksMDE0NDQfJzk9ODI8LjM0Mv/bAEMBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAIAAgAMBIgACEQEDEQH/xAAcAAACAwADAQAAAAAAAAAAAAAEBQMGBwABAgj/xAA3EAACAQMDAwIEBAQFBQAAAAABAgMABBEFEiEGMUETUQciYXEygZGhFCNSwRUkM0PwNEJTguH/xAAYAQADAQEAAAAAAAAAAAAAAAABAgMEAP/EACARAAICAwEBAAMBAAAAAAAAAAABAhEDEiExQQQTIlH/2gAMAwEAAhEDEQA/ANIEldGUjvQvqc965vPvSkidp8N2JNc9cEZzgDvQxbyaC1C7SytJbmRgsSoS5PjiuOK51J1RKlzcW9vO0Edqm+VxwT7DP/O9Z3P1zfw3BEVybgv/AFH8J9vrVe17WpdQv7qfewSaQvtz9eM0st+TuPjzTqJ1Fku+rtbu1VZNQn2qMAK+O9Cxa9em7WSOd1MeW37sn9aSyP8AJkHg8DFTW6ZhbkLnkk9gKak/AeFztfiDrSQrHJOGydxbbz9v0qxTfEuSeVGtrdYrfcNzPyzds49qzUOi7Y4B87cNI3fHc/apHuB+Msdqdv8An1oOCCbtadS2FzpyXryehG7FVEpAJx7e9GJdxXcStC25G5zWF2JnkCyTM2Acque369qunT2vS2s6W4CGL/cTJY5z3BpJQfw5OvTTIV7Uwi4oG2ZZI1ZTlSMg0xiHipDhcKlmAx+lPLCAIuSOaX2MAADt5p5GMCuSthRm3qYrsye54oKOYOobzXqWYJEzkjgZ5pxDxqOqQadbvNcOFVRk5Pasl6u+IR1TTrjT7RCsUpAZj5ANCdZdVyavdNbwk/wsbYGOPUPufp7VSpGTz+tUUfpxEZWkIJ/OpWfauxe5FchgL5xyRXv+FlHODk9qN0xtTwMNIAfwIOakNwWG0cKDu+596kg02WQbQDg01t+mLiQDOeeKDmkHRsWxzBBx+Jhj8v8A7U8U0bNlvwJ59z9Pc05bpKQICd1Az9PXcJyInIH0orLFgeNo7jL3jgFwsS/Mc+9WrTpHhtytlCA2OZXHb7VSnWWFwku9B7DirToV5BFsGC8vgE5AHvVFTJtUah0fdSiIWlxJuONy5/fH51doh2qhaRtle0niUI/qKME84PetAhHas01T4Onwe2ag2yZHij1oOxGbZKNHalh6MjGo5vTkKk8Gq/17q76f004ifEk7CIY74Pf9qdTrWd/EW5eZ7OEglY1Zzz57CjDro5oz+SQue+BUO3d8x/Ku5QTJg8cc16BDDaPHatAoTp0bF8j3qwxWq4GRmlOmLycDgcU/gBNZ5+lsa4E2ltGpG1R+lWOxhBAxikkKtkdxzT+wWTwvFZ5mmKHFlabjgjIpxDpMUmP5anPuKHshtQE4596f6e6NgGhFHNFe1z4eW2p2JZIwkpHcDtWS2GmS2mqyWUwIkhkKMuccg19UaeiygDHFZJ1Jo8Vv8Ub4Ku1JDG4/9lGf3zWzFaMuShn03atG1uwGBuHfue/FXmFe1LLC1WFFwijgZ4804hWhN2yaVIdWQ/yyUZQtkMWy0VQiMjF5x3rPOvYQiwSr3YkE1pEy9+Ko/XkJbSQ68lH7Y96EeM5+GUXbFpMdqijJLADueAK9yEtKfrTfQNOFxK0zjIQ4A+tXk9VYIq+BmnWhggBYctySaNW9jtmO0biO5poliHQA4CnuTXWbW0wqRBj9RnNZtk3006tLh1ZdQW24eqmAPO2rrod9pl/hYZlDf0mq/p8EN/GVayJXyVArj6dbadJ6sQ2lDzxhh96EscH8oKlNfTUY7SP0woUHjPFMdN01YxuYYOeKqnS2qG+kjRpMsPr3pl1BPdQb4xei2H0Papxgm6KN0rNAsEjjIOQCfFVDXLNJOvJZWUHFuh5GfpVZ0a26lmkBtddS6UniN+GP51aVs76DUWfUXDXHoohwc4GSRzWqK1Xpkn1h8K9qOjHahYhRsIpRRxaf9OtEVBaDEAqejE4yCZe/FVfqtJTo0vo4zuUNkd1zzVsmXGTSLXYi+l3HGcAE/YEVOXCkPTD7iylgnZZEK4PGRVn6ai26ePfcaj1f/MfxMsoBlRcKPAHvRugIBp2fNNOblCxow1nQ1cbYc8fTiktxbXDyjMhVD3wO/wCdPInTdhv3p3a2NtdIFKZrOp6s0uGxWOnbKPTLwzzyxzx7SBGzsuD75FS3ssryyMZ/UjYHAIOR+fmrUenYcZWMD60t1HTo7aLBAFVf5FqhF+PTsh6Mnkh1FBkj5uKd/EXStTm1WOaGULDIqupbsM/T+9JtBCx6ghUdjW4yaZb6no1pLKoLKgHPtSY5VNsfKv5RUOjtIuk0mF7eR5tQQhnSYKYSvsGHzA+xHmrLqCH/ABWZ2DBmVMhjnHyim+j2EVipEMYUEc4oPWI9uo7v6kFaNtumOSp0DxCjYQaFiH3o2IUBWM7T/Sx9anqC1/AfvU9MgGVTr3oF4VkLIwBVlIIprcJhjQir/NH2NIxkZb1VpItFZPmDRKxB8Mp7Ul0W92RtEx88Vrev6NFq2lTxtlZAh2svft2rDInaCY54xTQj/LQ8p9TLOt0DMoBzmrnokm9FyRmssiu2afIOcGrdpmqLZW5mmk2onJJNJkxWiuLL3pplzNDaWBkblgOBWees+p6hK10+MN8i5wMVBc9bJdcYYRjhQe5qt3GtNcXOVjwM8UqxPxFHnj6aRodgkd8q7gSxyMmtrgik/wAEhETDMYyR7ivnLpm/itr5ZJLj094yQ5ztxW86RqlpqVkjW98C2zaVDY+/FFY3G2wSyKaVFhspFeIEYGKU6zIragiA/MsYJ/U1Bd6imm2md/J4XFVvR9QbUdVvJckoCEGfoPFUgm4mfJFRkWWLvRsQ8UJEO1HwrkhR3NcIw624U1PXlF2KBXqihTObpcM1AdpRTG+IDGlpOZB96UZBMSbwyjyMVgPVOlSaTr91bsMIWMkZ91NbfqeuWfT2lzajek+mnCovd2PZRWDa91Nc9U6vLd3KKmBiKNe0aZ7fXv3qmNCyYLApEgY09kiS806Ub8MoDge+PFVoTbSeT9qlXUHWIqpODnFO4v0MZJDm2tEkthMh3Afi4yR96Ms9MleRWSKFvruxSvRb8QblkyUfjApx6l3bkSWpBTOcGkdp0Wx61bHNr03LcXHyWLs+AMI4IFOxp+raRb70E8ZQZIx+/FB6F1Bq8V7EI7JJAwAYjAx+daU97HHpUss6rkIcj3obNejuMJK4lVXVJbzpn1J5GLB/lP8AVTjoi2dbAztn+Y5YZ9qoUepSXoTT1OxJJztUeATWu6ZGkNrFGgwqqBinmtVX+me7Y2i8U1sUyS3sMUqip5aJsgBPduakjmT1yuVymFM4vTliaAx8w+9Ldf6z0PSpDHLeLJKOPThG8/n4FUHVviddSBo9Ot0gHiRzub7+woKDYdkhn8WJCNFs4Qw5mZiufpwayK3Pp3BB5GMUbdapcahcSy3czyMwJLOSTQwQSRpOnP8A2sPb2q1VGhU7kQOxSUn64rwWJbg0xh0ue+3/AMPBJIVG5tiFto9zio00qZwccY/euU19Do/hHazYkGTkDtTu31iWJdm7Kd6RSWdzb5yhx7ipIHYcMu370zSkcm4l203qGSzRXQDIPtyasR6rlvbRopdvHOB5Hms0WXlUB8HAzRbXxitfUDcfh48k+K5Y19C8sqovXSb6fNrQv7q6jiWIlY0bgH65/tWradrGmXb+lb31u7/0Bxu/SvnqzZre0Vv9w/MR70PeXx3pKjskiHII4NNPFt2yanR9WxGrDGweNWHYivmrp74pa1bQrHPsvEX/AMo+bH3HNXOy+MAiH86zRD5X1CM/sal+mS8G3RslcrOdP+MOj3MqpdWk9uGOA6kOP7Grzp2rWOrQetY3KTL5xwR9weRSuEo+o5STP//Z" alt="imge"/> 
+                                <h1>Jeski</h1>
+                                <p class="text-[4px]">@jeski11@gmail.com</p>
+                                <div class="pt-2">
+                                    <button class="p-3 sado rounded-lg text-gray-50">
+                                        <span>5370</span>
+                                        <span>Rises</span>
+                                        <span><img class="w-5 h-5 inline-block" src="/static/assets/seed-VbYmyroD.png" alt="rise"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-32">
+                    <div class="ml-4 mt-4">
+                        <h3 class="text-2xl text-gray-50 font-bold">Top Achievements</h3>
+                        <hr class="mr-10 mt-2 border-t-4">
+                    </div>
+                    <div class="mt-5">
+                        <div class="bg-[rgba(2,1,37,0.7)] rounded-2xl m-4 p-[8px]">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <img class="w-10 h-10 rounded-[100px]" src="data:image/jpeg;base64,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" alt="imge"/> 
+                                </div>
+                                <div class="-ml-3">
+                                    <h1>Jeski</h1>
+                                    <p class="text-[9px]">@jeski11@gmail.com</p>
+                                </div>
+                                <div class="pt-2 -mt-3">
+                                    <button class="px-2 sado text-[12px] rounded-3xl text-gray-50">
+                                        <span class="text-lg">5370</span>
+                                        <span class="text-[10px]">Rises</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="pl-12">
+                                <h1>Hello there</h1>
+                                <img src="" alt="pic1"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+        </div>
+        
+    </main>
+    <h1 class="bg-gray-200 text-lg text-center py-2">Copyrights &copy; 2024 | All Rights Reserved</h1>
+</body>
+</html>
